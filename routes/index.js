@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Quiz' });
 });
 
+router.get('/author', function(req, res, next) {
+  res.render('../views/author.ejs', { title: ' Quiz' });
+  res.render('/public/images/david.jpg', { title:  'Quiz' });
+});
 module.exports = router;
